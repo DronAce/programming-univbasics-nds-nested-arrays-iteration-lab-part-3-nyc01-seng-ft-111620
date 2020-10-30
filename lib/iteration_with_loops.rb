@@ -4,7 +4,7 @@ def join_nested_strings(src)
   for i in 0...src.size
     for y in 0...src[i].size
       if src[i][y].instance_of?
-        puts src[i][y]
+        src << src[i][y]
       end
     end
   end
