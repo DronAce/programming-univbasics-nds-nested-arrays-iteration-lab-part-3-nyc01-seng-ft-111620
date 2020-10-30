@@ -4,7 +4,7 @@ def join_nested_strings(src)
   srcg = []
   for i in 0...src.size
     for y in 0...src[i].size
-      if src[i][y].instance_of?
+      if src[i][y].instance_of? String
         srcg << src[i][y]
       end
     end
