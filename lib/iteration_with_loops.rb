@@ -3,7 +3,7 @@ def join_nested_strings(src)
   # Combine all Strings present in the AoA into a single value and return it
   for i in 0...src.size
     for y in 0...src[i].size
-      if src[i][y] % 2 == 0
+      if src[i][y].instance_of?
         puts src[i][y]
       end
     end
